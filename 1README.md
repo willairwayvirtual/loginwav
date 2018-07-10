@@ -1,4 +1,4 @@
-# loginwav
+
 Imports System.Data.OleDb
 Public Class main_login
     Dim provider As String
