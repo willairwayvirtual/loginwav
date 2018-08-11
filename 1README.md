@@ -1,4 +1,4 @@
-
+Imports System.Data.OleDb Public Class main_login Dim provider As String Dim dataFile As String Dim connString As String Dim myConnection As OleDbConnection = New OleDbConnection
 Imports System.Data.OleDb
 Public Class main_login
     Dim provider As String
