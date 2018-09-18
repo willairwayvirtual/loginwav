@@ -1,17 +1,14 @@
-Imports System.Data.OleDb Public Class main_login Dim provider As String Dim dataFile As String Dim connString As String Dim myConnection As OleDbConnection = New OleDbConnection
-Imports System.Data.OleDb
-Public Class main_login
+ublic Class main_login
     Dim provider As String
     Dim dataFile As String
     Dim connString As String
     Dim myConnection As OleDbConnection = New OleDbConnection
 
-
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
         provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
         'Change the following to your access database location
-        dataFile = "C:\VisStudioProj\wav login Desktop App23\wav login Desktop App23\BIN\DEBUG\logindb.accdb"
-        connString = provider & dataFile
+        dataFile = "C:\VisStudioProj\wav login Desktop App23\wav login Desktop App23\BIN\DEBUG\willairwayvirtualDatabase.accdb"
+         connString = provider & dataFile
         myConnection.ConnectionString = connString
         myConnection.Open()
 
