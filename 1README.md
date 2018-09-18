@@ -1,8 +1,10 @@
-ublic Class main_login
+Imports System.Data.OleDb
+Public Class main_login
     Dim provider As String
     Dim dataFile As String
     Dim connString As String
     Dim myConnection As OleDbConnection = New OleDbConnection
+
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
         provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
