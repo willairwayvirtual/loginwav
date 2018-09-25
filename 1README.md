@@ -10,7 +10,7 @@ Public Class main_login
         provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
         'Change the following to your access database location
         dataFile = "C:\VisStudioProj\wav login Desktop App23\wav login Desktop App23\BIN\DEBUG\willairwayvirtualDatabase.accdb"
-         connString = provider & dataFile
+        connString = provider & dataFile
         myConnection.ConnectionString = connString
         myConnection.Open()
 
@@ -35,7 +35,9 @@ Public Class main_login
         'checking the result
         If userFound = True Then
             Form2.Show()
-            Form2.Label1.Text = "Hello " & txtUsername.Text & " " & Status & " Member "
+
+
+            Me.Close()
         Else
             MsgBox("Sorry, username or password not found", MsgBoxStyle.OkOnly, "Invalid Login")
         End If
@@ -55,7 +57,16 @@ Public Class main_login
 
     End Sub
 
-    Private Sub LinkLabel1_Click(sender As Object, e As EventArgs) Handles LinkLabel12.Click
+    Private Sub LinkLabel1_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub LinkLabel12_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button32.Click
+        ResetPword.Show()
+        Me.Close()
     End Sub
 End Class
